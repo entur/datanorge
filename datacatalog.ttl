@@ -24,4 +24,5 @@ products:energy_emissions
     dct:description "This data product is based on timetable data from GTFS, both historic and expected trips, and estimated emissons calculated by Sintefs Energy module. This data is public"@en ;
     dct:publisher   <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/311046349> ;
     dcat:theme      <http://publications.europa.eu/resource/authority/data-theme/GOVE>;
-    dct:identifier  "https://miljo.entur.org/".
+    dct:identifier  "https://miljo.entur.org/";
+    dcatno:accessRequestURL  "https://frontend-soknad.paas2.uninett.no".
