@@ -1,1 +1,29 @@
-.
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+@prefix products: <https://data.entur.no/domain/public-transport-data/product/> .
+@prefix developer: <https://developer.entur.org/> .
+
+<https://entur.no/>
+    rdf:type dcat:Catalog ;
+    dcat:service <https://developer.entur.org/timetable> .
+
+<https://developer.entur.org/timetable>
+    rdf:type        dcat:DataService ;
+    dct:title       "Timetable"@en ;
+    dcat:endpointURL <https://api.entur.io/timetable-public/v1> ;
+    dct:description """
+        API for checking the status of timetable data imports. The endpoint returns the date of the latest successful import of timetable data into Entur's systems for each data provider. Data providers are identified by their codespaces.
+        This import date is also displayed in the list of NeTEx files available on Entur Open Data Portal. Additionally, the import date is stored in each NeTEx archive available on this page, in the "created" timestamp of the CompositeFrame.
+        For example: created="2019-05-29T12:59:32.202".
+        The date returned by this service is the original import date, i.e. the date Entur received the source dataset from the data provider.
+        It may be different from the creation date of the archives listed on NeTEx files, since these archives are regenerated every day through a filtering process that removes obsolete data.
+        Base URL: https://api.entur.io/timetable-public/v1
+        Wildcard definitions necessary to get Jetty to match authorization filters to endpoints with path params.
+    """@en ;
+    dcat:landingPage <https://developer.entur.org/pages-timetable-timetable> ;
+    dct:format      <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dct:publisher   <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
+    dcat:theme      <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+    dct:identifier  "https://developer.entur.org/timetable" .
