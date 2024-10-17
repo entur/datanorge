@@ -1,0 +1,18 @@
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+@prefix products: <https://data.entur.no/domain/public-transport-data/product/> .
+@prefix developer: <https://developer.entur.org/> .
+
+<https://entur.no/> rdf:type dcat:Catalog ;
+  dcat:dataset products:geocoder .
+
+products:geocoder
+    rdf:type        dcat:Dataset ;
+    dct:title       "Geocoder"@en ;
+    dct:description "The Geocoder API can be used to query addresses, Points Of Interest (POI) and public transport stops. The primary purpose of the geocoder is to find the start- and end points for queries to the journey planner API through an autosuggest interface."@en ;
+    dct:publisher   <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
+    dcat:theme      <http://publications.europa.eu/resource/authority/data-theme/GOVE>;
+    dct:identifier  "https://developer.entur.org/pages-geocoder-intro".
+
