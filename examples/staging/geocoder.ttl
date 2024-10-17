@@ -9,10 +9,14 @@
   dcat:dataset products:geocoder .
 
 products:geocoder
-    rdf:type        dcat:Dataset ;
+    rdf:type        dcat:Dataservice ;
     dct:title       "Geocoder"@en ;
-    dct:description "The Geocoder API can be used to query addresses, Points Of Interest (POI) and public transport stops. The primary purpose of the geocoder is to find the start- and end points for queries to the journey planner API through an autosuggest interface."@en ;
+    dcat:endpointURL    <https://api.entur.io/geocoder/v1/autocomplete>
+    dct:description "The Geocoder API can be used to query addresses, Points Of Interest (POI) and public transport stops. The primary purpose of the geocoder is to find the start- and end points for queries to the journey planner API through an autosuggest interface."@en
+    dcat:keyword    ""
+    dcat:landingPage <hhttps://developer.entur.org/pages-geocoder-intro>
+    dct:format      "application/json"
     dct:publisher   <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
     dcat:theme      <http://publications.europa.eu/resource/authority/data-theme/GOVE>;
-    dct:identifier  "https://developer.entur.org/pages-geocoder-intro".
+    dct:identifier  "https://developer.entur.org/geocoder".
 
