@@ -19,3 +19,5 @@ Gjenstående fra prod https://data.norge.no/datasets/f8327e57-60fa-440f-9ecd-a87
 
 Gjenstående fra api-dokumentasjonen:
 * liensen: NLOD
+* explore NSR at https://stoppested.entur.org/
+* link dataservice to dataset
