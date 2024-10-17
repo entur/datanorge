@@ -24,10 +24,10 @@ products:national_stop_registry
 developer:national_stop_registry_api
     rdf:type        dcat:DataService ;
     dct:title       "National Stop Registry"@en ;
-    dcat:endpointURL    <https://api.entur.io/stop-places/v1/read>
-    dct:description "This API is the core service for journey planning and uses OpenTripPlanner software to provide departure boards for individual stops, and point-to-point journey planning for all public transport in Norway, including real-time information, regardless of transport mode, or operator. All data is presented as a Transmodel-based GraphQL-API."@en
-    dcat:landingPage <https://developer.entur.org/pages-nsr-nsr>
-    dcat:servesDataset <https://stoppested.entur.org/>
+    dcat:endpointURL    <https://api.entur.io/stop-places/v1/read>;
+    dct:description "This API is the core service for journey planning and uses OpenTripPlanner software to provide departure boards for individual stops, and point-to-point journey planning for all public transport in Norway, including real-time information, regardless of transport mode, or operator. All data is presented as a Transmodel-based GraphQL-API."@en;
+    dcat:landingPage <https://developer.entur.org/pages-nsr-nsr>;
+    dcat:servesDataset products:national_stop_registry;
     dct:format      <http://publications.europa.eu/resource/authority/file-type/JSON>;
     dct:publisher   <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
     dcat:theme      <http://publications.europa.eu/resource/authority/data-theme/GOVE>;
