@@ -5,8 +5,9 @@
 @prefix products: <https://data.entur.no/domain/public-transport-data/product/> .
 @prefix developer: <https://developer.entur.org/> .
 
-<https://entur.no/> rdf:type dcat:Catalog ;
-  dcat:dataservice developer:geocoder .
+<https://entur.no/>
+    rdf:type dcat:Catalog ;
+    dcat:service developer:geocoder .
 
 developer:geocoder
     rdf:type        dcat:Dataservice ;

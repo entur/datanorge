@@ -6,7 +6,7 @@
 @prefix developer: <https://developer.entur.org/> .
 
 <https://entur.no/> rdf:type dcat:Catalog ;
-  dcat:dataservice developer:journey_planner .
+  dcat:service developer:journey_planner .
 
 developer:journey_planner
     rdf:type        dcat:Dataservice ;
