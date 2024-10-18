@@ -12,7 +12,7 @@ developer:timetable a dcat:DataService ;
         The date returned by this service is the original import date, i.e. the date Entur received the source dataset from the data provider.
         It may be different from the creation date of the archives listed on NeTEx files, since these archives are regenerated every day through a filtering process that removes obsolete data.
         Base URL: https://api.entur.io/timetable-public/v1
-        Wildcard definitions necessary to get Jetty to match authorization filters to endpoints with path params."""@en ;
+        Wildcard definitions necessary to get Jetty to match authorization filters to endpoints with path params. TEst 123"""@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dct:identifier "https://developer.entur.org/timetable" ;
     dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
