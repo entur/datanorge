@@ -1,0 +1,11 @@
+{
+  "name": "json-to-turtle",
+  "module": "",
+  "type": "module",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "rdflib": "^2.2.35"
+  }
+}
