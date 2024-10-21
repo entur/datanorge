@@ -1,15 +1,14 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 
-<https://data.entur.no/miljo> a dcat:Catalog ;
+<https://data.entur.no/> a dcat:Catalog ;
     dct:title "Entur Data Catalog"@en ;
     dcat:dataset <https://miljo.entur.org/>,
         <https://stoppested.entur.org/> .
 
 <https://miljo.entur.org/> a dcat:Dataset ;
-    dct:description "This data product is based on timetable data from GTFS, both historic and expected trips, and estimated emissions calculated by Sintefs Energy module. This data is public TEST TEST TEST"@en,
+    dct:description "This data product is based on timetable data from GTFS, both historic and expected trips, and estimated emissions calculated by Sintefs Energy module. This data is public"@en,
         "This data product is based on timetable data from GTFS, both historic and expected trips, and estimated emissions calculated by Sintefs Energy module. This data is public"@nb ;
-    dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/311046349> ;
     dct:title "Planned Emissions"@en,
         "Planlagte utslipp"@nb ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> .
@@ -17,7 +16,6 @@
 <https://stoppested.entur.org/> a dcat:Dataset ;
     dct:description "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place."@en,
         "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place."@nb ;
-    dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/311046349> ;
     dct:title "National Stop Registry"@en,
         "Norsk stoppestedregister"@nb ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> .
