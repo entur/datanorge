@@ -5,7 +5,7 @@
 @prefix or: <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/>.
 @prefix timet: <https://api.entur.io/timetable-public/>.
 @prefix d0: <http://publications.europa.eu/resource/authority/data-theme/>.
-@prefix ent: <https://entur.no/>.
+@prefix ent: <https://entur.no/timetable>.
 
 dev:timetable
     a d:DataService;
