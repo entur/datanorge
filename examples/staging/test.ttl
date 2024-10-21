@@ -7,7 +7,7 @@
         <https://stoppested.entur.org/> .
 
 <https://miljo.entur.org/> a dcat:Dataset ;
-    dct:description "This data product is based on timetable data from GTFS, both historic and expected trips, and estimated emissions calculated by Sintefs Energy module. This data is public"@en,
+    dct:description "This data product is based on timetable data from GTFS, both historic and expected trips, and estimated emissions calculated by Sintefs Energy module. This data is public TEST TEST TEST"@en,
         "This data product is based on timetable data from GTFS, both historic and expected trips, and estimated emissions calculated by Sintefs Energy module. This data is public"@nb ;
     dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/311046349> ;
     dct:title "Planned Emissions"@en,
