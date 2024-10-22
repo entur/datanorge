@@ -1,6 +1,7 @@
 from datacatalogtordf import Catalog
-from national_stop_registry.national_stop_registry_dataset import national_stop_registry_dataset
-from national_stop_registry.national_stop_registry_api import national_stop_registry_data_service
+
+from national_stop_registry.national_stop_registry import get_national_stop_registry_resourses
+
 
 def main():
 
@@ -10,6 +11,8 @@ def main():
     enturCatalog.title = {"en": "Entur Data Catalog"}
 
     # Add datasets and services to the catalog
+    (national_stop_registry_dataset, national_stop_registry_data_service) = get_national_stop_registry_resourses()
+
     enturCatalog.datasets.append(national_stop_registry_dataset)
     enturCatalog.services.append(national_stop_registry_data_service)
 
