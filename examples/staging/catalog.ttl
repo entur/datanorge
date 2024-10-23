@@ -1,12 +1,32 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 
-<https://entur.no/07e0da8a-19ec-43a3-8622-e97f55492470> a dcat:Catalog ;
+<https://entur.no/cc73d470-7dc7-4dc5-bd26-ee5687923aa2> a dcat:Catalog ;
     dct:title "Entur Data Catalog"@en ;
-    dcat:dataset <https://stoppested.entur.org/89629c3b-ceef-4eaf-b102-6a2863987aa6> ;
-    dcat:service <https://developer.entur.org/stop-place963dc966-e3e4-4055-bc09-925f54bb3146> .
+    dcat:dataset <https://developer.entur.org/stops-and-timetable-datafdcc9fa6-d573-4f02-af8d-dc78bd2144ce>,
+        <https://stoppested.entur.org/a26676e0-558d-4ad6-aea2-e3d027e2c71b> ;
+    dcat:service <https://developer.entur.org/pages-geocoder-intro>,
+        <https://developer.entur.org/pages-journeyplanner-journeyplanner>,
+        <https://developer.entur.org/pages-mobility-docs-mobility-v2>,
+        <https://developer.entur.org/pages-open-distance-ten-api>,
+        <https://developer.entur.org/pages-real-time-intro>,
+        <https://developer.entur.org/pages-timetable-timetable2a90dba3-8966-41d8-92d2-4fd710a15ee1>,
+        <https://developer.entur.org/stop-placee2b8be1b-fb8c-4efa-aad1-8218461d6f4b> .
 
-<https://developer.entur.org/stop-place963dc966-e3e4-4055-bc09-925f54bb3146> a dcat:DataService ;
+<https://developer.entur.org/pages-timetable-timetable2a90dba3-8966-41d8-92d2-4fd710a15ee1> a dcat:DataService ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dct:description "Entur operates the national registry for timetable data for all public transport in Norway, collecting data from 60 public transportation operators. This data is open and free of use for app and service developers."@en ;
+    dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
+    dct:title "Timetable data"@en ;
+    dcat:endpointDescription <https://developer.entur.org/timetable-import-info-v1> ;
+    dcat:endpointURL <https://api.entur.io/timetable-public/v1> ;
+    dcat:keyword "sanntid,rutetider,reiseplanlegging"@nb ;
+    dcat:landingPage <https://developer.entur.org/pages-timetable-timetable> ;
+    dcat:mediaType <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcat:servesDataset <https://developer.entur.org/stops-and-timetable-datafdcc9fa6-d573-4f02-af8d-dc78bd2144ce> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> .
+
+<https://developer.entur.org/stop-placee2b8be1b-fb8c-4efa-aad1-8218461d6f4b> a dcat:DataService ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
     dct:description "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place."@en ;
     dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
@@ -17,14 +37,97 @@
     dcat:keyword "sanntid,rutetider,reiseplanlegging"@nb ;
     dcat:landingPage <https://developer.entur.org/pages-nsr-nsr> ;
     dcat:mediaType <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dcat:servesDataset <https://stoppested.entur.org/89629c3b-ceef-4eaf-b102-6a2863987aa6> ;
+    dcat:servesDataset <https://stoppested.entur.org/a26676e0-558d-4ad6-aea2-e3d027e2c71b> ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> .
 
-<https://stoppested.entur.org/89629c3b-ceef-4eaf-b102-6a2863987aa6> a dcat:Dataset ;
+<https://developer.entur.org/pages-geocoder-intro> a dcat:DataService ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dct:description """The Geocoder API can be used to query addresses, Points Of Interest (POI) and public transport stops. The primary purpose of the geocoder is to find the start- and end points for queries to the journey planner API through an autosuggest interface.
+
+        The following query will return a list of destination- or arrival points containing POI's, addresses and stops that match the string "sons":
+
+        https://api.entur.io/geocoder/v1/autocomplete?text=sons&lang=en"""@en ;
+    dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
+    dct:title "Geocoder"@en ;
+    dcat:endpointDescription <https://developer.entur.org/pages-geocoder-api> ;
+    dcat:endpointURL <https://api.entur.io/geocoder/v1/> ;
+    dcat:keyword "sanntid,rutetider,reiseplanlegging"@nb ;
+    dcat:landingPage <https://developer.entur.org/pages-geocoder-intro> ;
+    dcat:mediaType <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> .
+
+<https://developer.entur.org/pages-real-time-intro> a dcat:DataService ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dct:description """These APIs allow your server to subscribe to real-time data from all included real-time feeds in Norway on SIRI 2.0. It is available as SIRI XML, SIRI Lite (REST) and GTFS-RT.
+
+        These services include only real-time data and not any basic journey planner information. If you are creating an end-user service such as a journey planner, the JourneyPlanner API is a better choice."""@en ;
+    dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
+    dct:title "Real-Time Data"@en ;
+    dcat:endpointDescription <https://developer.entur.org/pages-real-time-api> ;
+    dcat:endpointURL <https://api.entur.io/realtime/v1> ;
+    dcat:keyword "sanntid,rutetider,reiseplanlegging"@nb ;
+    dcat:landingPage <https://developer.entur.org/pages-real-time-intro> ;
+    dcat:mediaType <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> .
+
+<https://developer.entur.org/stops-and-timetable-datafdcc9fa6-d573-4f02-af8d-dc78bd2144ce> a dcat:Dataset ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dct:description "Part of our mission statement is to share our data with anyone who wants it, for free. This page lists all our timetables, and stop place data dumps which are updated daily. All data dumps have permanent URL's and come as NeTEx or GTFS datasets. NeTEx is the official format for public transport data in Norway and is the most complete in terms of available data. GTFS is a downstream format with only a limited subset of the total data, but we generate datasets for it anyway since GTFS can be easier to use and has a wider distribution among international public transport solutions. GTFS sets come in \"extended\" and \"basic\" versions."@en ;
+    dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
+    dct:title "Timetable data"@en ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> .
+
+<https://stoppested.entur.org/a26676e0-558d-4ad6-aea2-e3d027e2c71b> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
     dct:description "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place."@en,
         "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place."@nb ;
     dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
     dct:title "National Stop Registry"@en,
         "Norsk stoppestedregister"@nb ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> .
+
+<https://developer.entur.org/pages-journeyplanner-journeyplanner> a dcat:DataService ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dct:description """This API is the core service for journey planning and uses OpenTripPlanner software to provide departure boards for individual stops, and point-to-point journey planning for all public transport in Norway, including real-time information, regardless of transport mode, or operator. All data is presented as a Transmodel-based GraphQL-API.
+
+                Base URL: https://api.entur.io/journey-planner/v3/graphql
+
+                To make it easier for our users to construct valid API-queries, we have an IDE for the API where you also find the documentation.
+
+                GraphQL IDE: https://api.entur.io/graphql-explorer/journey-planner-v3
+
+                Are you new to GraphQL? You can read more about it here: https://graphql.org/"""@en ;
+    dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
+    dct:title "Journey Planner"@en ;
+    dcat:endpointDescription <https://developer.entur.org/pages-journeyplanner-journeyplanner> ;
+    dcat:endpointURL <https://api.entur.io/journey-planner/v3/graphql> ;
+    dcat:keyword "sanntid,rutetider,reiseplanlegging"@nb ;
+    dcat:landingPage <https://developer.entur.org/pages-journeyplanner-journeyplanner> ;
+    dcat:mediaType <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> .
+
+<https://developer.entur.org/pages-mobility-docs-mobility-v2> a dcat:DataService ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dct:description "Aggregation API for shared mobility services."@en ;
+    dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
+    dct:title "Mobility"@en ;
+    dcat:endpointDescription <https://developer.entur.org/pages-mobility-docs-mobility-v2> ;
+    dcat:endpointURL <https://api.entur.io/mobility/v2/gbfs/v3/> ;
+    dcat:keyword "sanntid,rutetider,reiseplanlegging"@nb ;
+    dcat:landingPage <https://developer.entur.org/pages-mobility-docs-mobility-v2> ;
+    dcat:mediaType <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> .
+
+<https://developer.entur.org/pages-open-distance-ten-api> a dcat:DataService ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dct:description """This service handles distances between railway stations, measured along the track.
+
+        It has an open API for looking up distances, and an internal API for data maintenance."""@en ;
+    dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
+    dct:title "Station Distances"@en ;
+    dcat:endpointDescription <https://developer.entur.org/pages-open-distance-ten-api> ;
+    dcat:endpointURL <https://api.entur.io/distance-ten/> ;
+    dcat:keyword "sanntid,rutetider,reiseplanlegging"@nb ;
+    dcat:landingPage <https://developer.entur.org/pages-open-distance-ten-api> ;
+    dcat:mediaType <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> .
