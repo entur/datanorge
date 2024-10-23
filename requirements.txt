@@ -1,0 +1,2 @@
+datacatalogtordf~=3.0.0
+rdflib~=6.3.2

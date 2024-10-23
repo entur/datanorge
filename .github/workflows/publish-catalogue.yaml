@@ -1,0 +1,42 @@
+name: Run Python Script and Save Output
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  run-python-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
+
+      - name: Run Python script and save output
+        id: run_script
+        run: |
+          output=$(python -c "import src.main; print(main.main())")
+          echo "Output: $output"
+          echo "output=$output" >> $GITHUB_ENV
+
+      - name: Save output to file
+        run: echo "$output" > output.txt
+
+      - name: Upload output file as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: python-output
+          path: output.txt
