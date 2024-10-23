@@ -16,7 +16,7 @@ def create_geocoder_data_service(datasets: [Dataset] = []):
 
     # Recomended - https://data.norge.no/specification/dcat-ap-no#Datasett-anbefalte-egenskaper
     data_service.keyword = {"nb": "sanntid,rutetider,reiseplanlegging"}
-    data_service.media_types = [Format.JSON.value]
+    #data_service.media_types = [Format.JSON.value]
     data_service.contactpoint = get_contact()
     data_service.theme = [Theme.TRANSPORT.value]
     data_service.servesdatasets = datasets
