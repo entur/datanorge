@@ -15,3 +15,4 @@ class Format(Enum):
 
 class Theme(Enum):
     GOVE = URIRef("http://publications.europa.eu/resource/authority/data-theme/GOVE")
+    TRANSPORT = URIRef("http://publications.europa.eu/resource/authority/data-theme/TRAN")

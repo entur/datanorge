@@ -22,7 +22,7 @@ def create_data_service(datasets: [Dataset] = []):
     data_service.keyword = {"nb": "sanntid,rutetider,reiseplanlegging"}
     data_service.media_types = [Format.JSON.value]
     data_service.contactpoint = get_contact()
-    data_service.theme = [Theme.GOVE.value]
+    data_service.theme = [Theme.TRANSPORT.value]
     data_service.servesdatasets = datasets
     data_service.publisher = ENTUR_DATANORGE_PAGE
     # national_stop_registry_dataset.was_generated_by
@@ -51,7 +51,7 @@ def create_dataset():
         "en": "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place."
     }
     dataset.identifier = "https://stoppested.entur.org/" + str(uuid4())
-    dataset.theme = [URIRef("http://publications.europa.eu/resource/authority/data-theme/GOVE")]
+    dataset.theme = [Theme.TRANSPORT.value]
     dataset.title = {
         "nb": "Norsk stoppestedregister",
         "en": "National Stop Registry"

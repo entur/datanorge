@@ -18,7 +18,7 @@ def create_journey_planner_service(datasets: [Dataset] = []):
     data_service.keyword = {"nb": "sanntid,rutetider,reiseplanlegging"}
     data_service.media_types = [Format.JSON.value]
     data_service.contactpoint = get_contact()
-    data_service.theme = [Theme.GOVE.value]
+    data_service.theme = [Theme.TRANSPORT.value]
     data_service.servesdatasets = datasets
     data_service.publisher = ENTUR_DATANORGE_PAGE
     # dataset.concept
