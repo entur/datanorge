@@ -28,7 +28,7 @@ jobs:
       - name: Run Python script and save output
         id: run_script
         run: |
-          output=$(python -c "import src.main; print(main.main())")
+          output=$(python -c "import src.main; print(src.main.main())")
           echo "Output: $output"
           echo "output=$output" >> $GITHUB_ENV
 

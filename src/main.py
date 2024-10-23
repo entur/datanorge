@@ -2,7 +2,7 @@ from uuid import uuid4
 
 from datacatalogtordf import Catalog
 
-from resources.national_stop_registry import get_national_stop_registry_resourses
+from src.resources.national_stop_registry import get_national_stop_registry_resourses
 from src.resources.geocoder import create_geocoder_data_service
 from src.resources.journey_planner import create_journey_planner_service
 from src.resources.mobility import create_mobility_service
@@ -45,6 +45,7 @@ def main():
 
     # Print RDF in TTL format
     print(rdf.decode("utf-8"))
+    return rdf.decode("utf-8")
 
 
 if __name__ == "__main__":
