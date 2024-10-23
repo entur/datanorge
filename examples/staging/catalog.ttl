@@ -27,7 +27,6 @@
     dcat:endpointURL <https://api.entur.io/stop-places/v1/read> ;
     dcat:keyword "sanntid,rutetider,reiseplanlegging"@nb ;
     dcat:landingPage <https://developer.entur.org/pages-nsr-nsr> ;
-    dcat:mediaType <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcat:servesDataset <https://stoppested.entur.org/> ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
 
@@ -43,7 +42,6 @@
     dcat:endpointURL <https://api.entur.io/timetable-public/v1> ;
     dcat:keyword "sanntid,rutetider,reiseplanlegging"@nb ;
     dcat:landingPage <https://developer.entur.org/pages-timetable-timetable> ;
-    dcat:mediaType <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcat:servesDataset <https://developer.entur.org/stops-and-timetable-data> ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
 
@@ -63,7 +61,6 @@
     dcat:endpointURL <https://api.entur.io/geocoder/v1/> ;
     dcat:keyword "sanntid,rutetider,reiseplanlegging"@nb ;
     dcat:landingPage <https://developer.entur.org/pages-geocoder-intro> ;
-    dcat:mediaType <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
 
 <https://developer.entur.org/pages-real-time-intro> a dcat:DataService ;
@@ -80,7 +77,6 @@
     dcat:endpointURL <https://api.entur.io/realtime/v1> ;
     dcat:keyword "sanntid,rutetider,reiseplanlegging"@nb ;
     dcat:landingPage <https://developer.entur.org/pages-real-time-intro> ;
-    dcat:mediaType <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
 
 <https://developer.entur.org/stops-and-timetable-data> a dcat:Dataset ;
@@ -125,7 +121,6 @@
     dcat:endpointURL <https://api.entur.io/journey-planner/v3/graphql> ;
     dcat:keyword "sanntid,rutetider,reiseplanlegging"@nb ;
     dcat:landingPage <https://developer.entur.org/pages-journeyplanner-journeyplanner> ;
-    dcat:mediaType <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
 
 <https://developer.entur.org/pages-mobility-docs-mobility-v2> a dcat:DataService ;
@@ -140,7 +135,6 @@
     dcat:endpointURL <https://api.entur.io/mobility/v2/gbfs/v3/> ;
     dcat:keyword "sanntid,rutetider,reiseplanlegging"@nb ;
     dcat:landingPage <https://developer.entur.org/pages-mobility-docs-mobility-v2> ;
-    dcat:mediaType <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
 
 <https://developer.entur.org/pages-open-distance-ten-api> a dcat:DataService ;
@@ -157,5 +151,4 @@
     dcat:endpointURL <https://api.entur.io/distance-ten/> ;
     dcat:keyword "sanntid,rutetider,reiseplanlegging"@nb ;
     dcat:landingPage <https://developer.entur.org/pages-open-distance-ten-api> ;
-    dcat:mediaType <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
