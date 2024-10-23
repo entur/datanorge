@@ -1,10 +1,8 @@
-from uuid import uuid4
-
 from datacatalogtordf import DataService, Dataset
-from rdflib import URIRef
 
 from src.constants import AccessRight, ENTUR_DATANORGE_PAGE, Format, Theme
 from src.contact import get_contact
+
 
 def create_realtime_data_service(datasets: [Dataset] = []):
     data_service = DataService()

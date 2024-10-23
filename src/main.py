@@ -14,7 +14,7 @@ from src.resources.timetable import create_time_table_resources
 def main():
     # Create catalog object
     enturCatalog = Catalog()
-    enturCatalog.identifier = "https://entur.no/" + str(uuid4())
+    enturCatalog.identifier = "https://entur.no/" 
     enturCatalog.title = {"en": "Entur Data Catalog"}
 
     # Add datasets and services to the catalog

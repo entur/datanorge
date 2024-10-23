@@ -1,7 +1,4 @@
-from uuid import uuid4
-
 from datacatalogtordf import DataService, Dataset
-from rdflib import URIRef
 
 from src.constants import AccessRight, ENTUR_DATANORGE_PAGE, Format, Theme
 from src.contact import get_contact
@@ -11,7 +8,7 @@ def create_timetable_data_service(datasets: [Dataset] = []):
 
     # Obligatory - https://data.norge.no/specification/dcat-ap-no#Datasett-obligatoriske-egenskaper
     data_service.endpointURL = "https://api.entur.io/timetable-public/v1"
-    data_service.identifier = "https://developer.entur.org/pages-timetable-timetable" + str(uuid4())
+    data_service.identifier = "https://developer.entur.org/timetable"
     data_service.title = {
         "en": "Timetable data"
     }
@@ -47,7 +44,7 @@ def create_timetable_dataset():
     dataset.description = {
         "en": """Part of our mission statement is to share our data with anyone who wants it, for free. This page lists all our timetables, and stop place data dumps which are updated daily. All data dumps have permanent URL's and come as NeTEx or GTFS datasets. NeTEx is the official format for public transport data in Norway and is the most complete in terms of available data. GTFS is a downstream format with only a limited subset of the total data, but we generate datasets for it anyway since GTFS can be easier to use and has a wider distribution among international public transport solutions. GTFS sets come in "extended" and "basic" versions."""
     }
-    dataset.identifier = "https://developer.entur.org/stops-and-timetable-data" + str(uuid4())
+    dataset.identifier = "https://developer.entur.org/stops-and-timetable-data" 
     dataset.theme = [Theme.TRANSPORT.value]
     dataset.title = {
         "en": "Timetable data"

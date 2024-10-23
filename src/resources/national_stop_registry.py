@@ -1,7 +1,4 @@
-from uuid import uuid4
-
 from datacatalogtordf import DataService, Dataset
-from rdflib import  URIRef
 
 from src.constants import AccessRight, ENTUR_DATANORGE_PAGE, Format, Theme
 from src.contact import get_contact
@@ -12,7 +9,7 @@ def create_data_service(datasets: [Dataset] = []):
 
     # Obligatory - https://data.norge.no/specification/dcat-ap-no#Datasett-obligatoriske-egenskaper
     data_service.endpointURL = "https://api.entur.io/stop-places/v1/read"
-    data_service.identifier = "https://developer.entur.org/stop-place" + str(uuid4())
+    data_service.identifier = "https://developer.entur.org/stop-place" 
     data_service.title = {
         "nb": "Norsk stoppestedregister",
         "en": "National Stop Registry"
@@ -50,7 +47,7 @@ def create_dataset():
         "nb": "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place.",
         "en": "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place."
     }
-    dataset.identifier = "https://stoppested.entur.org/" + str(uuid4())
+    dataset.identifier = "https://stoppested.entur.org/" 
     dataset.theme = [Theme.TRANSPORT.value]
     dataset.title = {
         "nb": "Norsk stoppestedregister",
