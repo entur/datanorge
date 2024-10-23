@@ -1,37 +1,30 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix ns1: <http://www.w3.org/2006/vcard/ns#> .
 
-<https://entur.no/> a dcat:Catalog ;
+<https://entur.no/07e0da8a-19ec-43a3-8622-e97f55492470> a dcat:Catalog ;
     dct:title "Entur Data Catalog"@en ;
-    dcat:dataset <https://stoppested.entur.org/> ;
-    dcat:service <https://developer.entur.org/stop-place> .
+    dcat:dataset <https://stoppested.entur.org/89629c3b-ceef-4eaf-b102-6a2863987aa6> ;
+    dcat:service <https://developer.entur.org/stop-place963dc966-e3e4-4055-bc09-925f54bb3146> .
 
-<https://developer.entur.org/stop-place> a dcat:DataService ;
+<https://developer.entur.org/stop-place963dc966-e3e4-4055-bc09-925f54bb3146> a dcat:DataService ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
     dct:description "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place."@en ;
     dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
     dct:title "National Stop Registry"@en,
         "Norsk stoppestedregister"@nb ;
-    dcat:contactPoint [ a ns1:Organization ;
-            ns1:hasEmail <mailto:mailto:kollektivdata@entur.org> ;
-            ns1:hasOrganizationName "Entur"@en ] ;
     dcat:endpointDescription <https://developer.entur.org/stop-places-v1-read> ;
     dcat:endpointURL <https://api.entur.io/stop-places/v1/read> ;
     dcat:keyword "sanntid,rutetider,reiseplanlegging"@nb ;
     dcat:landingPage <https://developer.entur.org/pages-nsr-nsr> ;
     dcat:mediaType <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dcat:servesDataset <https://stoppested.entur.org/> ;
+    dcat:servesDataset <https://stoppested.entur.org/89629c3b-ceef-4eaf-b102-6a2863987aa6> ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> .
 
-<https://stoppested.entur.org/> a dcat:Dataset ;
+<https://stoppested.entur.org/89629c3b-ceef-4eaf-b102-6a2863987aa6> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
     dct:description "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place."@en,
         "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place."@nb ;
     dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
     dct:title "National Stop Registry"@en,
         "Norsk stoppestedregister"@nb ;
-    dcat:contactPoint [ a ns1:Organization ;
-            ns1:hasEmail <mailto:mailto:kollektivdata@entur.org> ;
-            ns1:hasOrganizationName "Entur"@en ] ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> .
