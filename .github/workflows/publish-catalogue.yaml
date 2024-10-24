@@ -32,7 +32,9 @@ jobs:
           echo "Output: $output"
 
       - name: Create output link
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "$output" > output.txt
           gh release delete latest-output-staging -y || true
-          gh release create latest-output-staging output.txt --title "Entur catalogue staging" --prerelease --clobber
+          gh release create latest-output-staging output.txt --title "Entur catalogue staging" --prerelease
