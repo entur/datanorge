@@ -13,6 +13,9 @@ class AccessRight(Enum):
 class Format(Enum):
     JSON = URIRef("http://publications.europa.eu/resource/authority/file-type/JSON")
 
+class MediaType(Enum):
+    JSON = URIRef("https://www.iana.org/assignments/media-types/application/json")
+
 class Theme(Enum):
     GOVE = URIRef("http://publications.europa.eu/resource/authority/data-theme/GOVE")
     TRANSPORT = URIRef("http://publications.europa.eu/resource/authority/data-theme/TRAN")
