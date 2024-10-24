@@ -38,4 +38,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: python-output
-          path: output.ttl
+          path: entur-staging.ttl
+          overwrite: true
