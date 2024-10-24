@@ -2,8 +2,6 @@ name: Run Python Script and Save Output
 
 on:
   push:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:

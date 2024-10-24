@@ -1,5 +1,6 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 
+<https://entur.no> a dcat:Catalog .
 <https://entur.no/> a dcat:Catalog .
 <https://entur.no/1> a dcat:Catalog .
 <https://data.entur.no/> a dcat:Catalog .
