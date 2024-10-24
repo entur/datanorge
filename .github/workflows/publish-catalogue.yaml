@@ -34,4 +34,5 @@ jobs:
       - name: Create output link
         run: |
           echo "$output" > output.txt
+          gh release delete latest-output-staging -y || true
           gh release create latest-output-staging output.txt --title "Entur catalogue staging" --prerelease --clobber
