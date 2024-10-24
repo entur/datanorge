@@ -30,7 +30,7 @@ jobs:
         run: |
           output=$(python -c "import src.main; print(src.main.main())")
           echo "Output: $output"
-          echo "output=$output" >> $GITHUB_ENV
+          echo "output=$output" >> $GITHUB_OUTPUT
 
       - name: Save output to file
         run: echo "$output" > output.txt
