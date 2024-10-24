@@ -29,7 +29,7 @@ def create_mobility_service(datasets: [Dataset] = []):
 
     # Optional - https://data.norge.no/specification/dcat-ap-no#Datasett-valgfrie-egenskaper
     data_service.description = {
-        "en": """Aggregation API for shared mobility services."""
+        "en": "Aggregation API for shared mobility services."
     }
     data_service.endpointDescription = "https://developer.entur.org/pages-mobility-docs-mobility-v2"
     data_service.landing_page = ["https://developer.entur.org/pages-mobility-docs-mobility-v2"]

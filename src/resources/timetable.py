@@ -42,7 +42,7 @@ def create_timetable_dataset():
 
     # Obligatory - https://data.norge.no/specification/dcat-ap-no#Datasett-obligatoriske-egenskaper
     dataset.description = {
-        "en": """Part of our mission statement is to share our data with anyone who wants it, for free. This page lists all our timetables, and stop place data dumps which are updated daily. All data dumps have permanent URL's and come as NeTEx or GTFS datasets. NeTEx is the official format for public transport data in Norway and is the most complete in terms of available data. GTFS is a downstream format with only a limited subset of the total data, but we generate datasets for it anyway since GTFS can be easier to use and has a wider distribution among international public transport solutions. GTFS sets come in "extended" and "basic" versions."""
+        "en": "Part of our mission statement is to share our data with anyone who wants it, for free. This page lists all our timetables, and stop place data dumps which are updated daily. All data dumps have permanent URL's and come as NeTEx or GTFS datasets. NeTEx is the official format for public transport data in Norway and is the most complete in terms of available data. GTFS is a downstream format with only a limited subset of the total data, but we generate datasets for it anyway since GTFS can be easier to use and has a wider distribution among international public transport solutions. GTFS sets come in extended and basic versions."
     }
     dataset.identifier = "https://developer.entur.org/stops-and-timetable-data" 
     dataset.theme = [Theme.TRANSPORT.value]

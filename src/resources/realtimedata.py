@@ -29,9 +29,7 @@ def create_realtime_data_service(datasets: [Dataset] = []):
 
     # Optional - https://data.norge.no/specification/dcat-ap-no#Datasett-valgfrie-egenskaper
     data_service.description = {
-        "en": """These APIs allow your server to subscribe to real-time data from all included real-time feeds in Norway on SIRI 2.0. It is available as SIRI XML, SIRI Lite (REST) and GTFS-RT.
-        
-        These services include only real-time data and not any basic journey planner information. If you are creating an end-user service such as a journey planner, the JourneyPlanner API is a better choice."""
+        "en": "These APIs allow your server to subscribe to real-time data from all included real-time feeds in Norway on SIRI 2.0. It is available as SIRI XML, SIRI Lite (REST) and GTFS-RT. These services include only real-time data and not any basic journey planner information. If you are creating an end-user service such as a journey planner, the JourneyPlanner API is a better choice."
     }
     data_service.endpointDescription = "https://developer.entur.org/pages-real-time-api"
     data_service.landing_page = ["https://developer.entur.org/pages-real-time-intro"]
