@@ -1,8 +1,7 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 
 <https://entur.no/> a dcat:Catalog .
-
 <https://data.entur.no/> a dcat:Catalog .
-
 <https://entur.no/cc73d470-7dc7-4dc5-bd26-ee5687923aa2> a dcat:Catalog .
+<https://registrering.staging.fellesdatakatalog.digdir.no/catalogs/210841962> a dcat:Catalog .
 
