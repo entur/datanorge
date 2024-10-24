@@ -35,6 +35,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "$output" > output.txt
+          echo "$output" > output.ttl
           gh release delete latest-output-staging -y || true
-          gh release create latest-output-staging output.txt --title "Entur catalogue staging" --prerelease
+          gh release create latest-output-staging output.ttl --title "Entur catalogue staging" --prerelease
