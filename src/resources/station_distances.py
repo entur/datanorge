@@ -29,9 +29,7 @@ def create_station_distances_service(datasets: [Dataset] = []):
 
     # Optional - https://data.norge.no/specification/dcat-ap-no#Datasett-valgfrie-egenskaper
     data_service.description = {
-        "en": """This service handles distances between railway stations, measured along the track.
-
-        It has an open API for looking up distances, and an internal API for data maintenance."""
+        "en": "This service handles distances between railway stations, measured along the track. It has an open API for looking up distances, and an internal API for data maintenance."
     }
     data_service.endpointDescription = "https://developer.entur.org/pages-open-distance-ten-api"
     data_service.landing_page = ["https://developer.entur.org/pages-open-distance-ten-api"]

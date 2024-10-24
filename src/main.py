@@ -30,17 +30,17 @@ def main():
     mobility_data_service = create_mobility_service()
 
     enturCatalog.datasets.extend([
-        #national_stop_registry_dataset,
-        #timetable_dataset,
+        national_stop_registry_dataset,
+        timetable_dataset,
     ])
     enturCatalog.services.extend([
-        #national_stop_registry_data_service,
-        #geocoder_data_service,
-        #journey_planner_service,
-        #timetable_data_service,
-        #realtime_data_service,
+        national_stop_registry_data_service,
+        geocoder_data_service,
+        journey_planner_service,
+        timetable_data_service,
+        realtime_data_service,
         station_distances_data_service,
-        #mobility_data_service
+        mobility_data_service
     ])
 
     # Get RDF representation in Turtle format
