@@ -20,11 +20,6 @@ Installer avhengigheter
 pip3 install -r requirements.txt
 ```
 
-Installer avhengigheter
-```sh
-pip3 install -r requirements.txt
-```
-
 Kjør main
 ```sh
 python3.10 -m src.main
