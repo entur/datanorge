@@ -31,12 +31,7 @@ jobs:
           output=$(python -c "import src.main; print(src.main.main())")
           echo "Output: $output"
 
-      - name: Save output to file
-        run: echo "$output" > output.ttl
-
-      - name: Upload output file as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: python-output
-          path: entur-staging.ttl
-          overwrite: true
+      - name: Create output link
+        run: |
+          echo "$output" > output.txt
+          gh release create latest-output-staging output.txt --title "Entur catalogue staging" --prerelease --clobber
