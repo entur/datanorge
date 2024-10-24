@@ -1,7 +1,11 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 
 <https://entur.no/> a dcat:Catalog .
+<https://entur.no/1> a dcat:Catalog .
 <https://data.entur.no/> a dcat:Catalog .
+<https://entur.no/gecoder> a dcat:Catalog .
 <https://entur.no/cc73d470-7dc7-4dc5-bd26-ee5687923aa2> a dcat:Catalog .
+<https://entur.no/c043e0dc-d3e5-4128-aa3f-b098fd955346> a dcat:Catalog .
+<https://entur.no/07e0da8a-19ec-43a3-8622-e97f55492470> a dcat:Catalog .
 <https://registrering.staging.fellesdatakatalog.digdir.no/catalogs/210841962> a dcat:Catalog .
 
