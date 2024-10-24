@@ -1,1 +1,2 @@
 <https://entur.no/> a dcat:Catalog .
+<https://data.entur.no/> a dcat:Catalog .
