@@ -30,11 +30,7 @@ def create_geocoder_data_service(datasets: [Dataset] = []):
 
     # Optional - https://data.norge.no/specification/dcat-ap-no#Datasett-valgfrie-egenskaper
     data_service.description = {
-        "en": """The Geocoder API can be used to query addresses, Points Of Interest (POI) and public transport stops. The primary purpose of the geocoder is to find the start- and end points for queries to the journey planner API through an autosuggest interface.
-
-        The following query will return a list of destination- or arrival points containing POI's, addresses and stops that match the string "sons":
-        
-        https://api.entur.io/geocoder/v1/autocomplete?text=sons&lang=en"""
+        "en": "The Geocoder API can be used to query addresses, Points Of Interest (POI) and public transport stops. The primary purpose of the geocoder is to find the start- and end points for queries to the journey planner API through an autosuggest interface. The following query will return a list of destination- or arrival points containing POI's, addresses and stops that match the string sons https://api.entur.io/geocoder/v1/autocomplete?text=sons&lang=en"
     }
     data_service.endpointDescription = "https://developer.entur.org/pages-geocoder-api"
     data_service.landing_page = ["https://developer.entur.org/pages-geocoder-intro"]
