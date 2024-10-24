@@ -12,6 +12,7 @@ brew install python@3.10
 Sett opp virituelt miljø
 ```sh
 python3.10 -m venv venv
+source venv/bin/activate
 ```
 
 Installer avhengigheter
