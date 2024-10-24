@@ -1,4 +1,4 @@
-from datacatalogtordf import DataService, Dataset
+from datacatalogtordf import DataService, Dataset, Distribution
 
 from src.constants import AccessRight, ENTUR_DATANORGE_PAGE, Format, Theme
 from src.contact import get_contact
@@ -55,10 +55,15 @@ def create_dataset():
     }
     dataset.publisher = ENTUR_DATANORGE_PAGE
 
+    distribution_gtfs = Distribution()
+    distribution_gtfs.identifier = "https://stoppested.entur.org/gtfs_latest/"
+    distribution_gtfs.access_URL = "https://developer.entur.org/stops-and-timetable-data"
+    distribution_gtfs.download_URL = "https://storage.googleapis.com/marduk-production/tiamat/Current_latest-gtfs.zip"
+
     # Recomended - https://data.norge.no/specification/dcat-ap-no#Datasett-anbefalte-egenskaper
     # dataset.concept
     # dataset.was_generated_by
-    # dataset.distributions
+    dataset.distributions = [distribution_gtfs]
     # dataset.spatial
     # dataset.keyword
     dataset.contactpoint = get_contact()
