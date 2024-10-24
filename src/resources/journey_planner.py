@@ -30,15 +30,7 @@ def create_journey_planner_service(datasets: [Dataset] = []):
 
     # Optional - https://data.norge.no/specification/dcat-ap-no#Datasett-valgfrie-egenskaper
     data_service.description = {
-        "en": """This API is the core service for journey planning and uses OpenTripPlanner software to provide departure boards for individual stops, and point-to-point journey planning for all public transport in Norway, including real-time information, regardless of transport mode, or operator. All data is presented as a Transmodel-based GraphQL-API.
-
-                Base URL: https://api.entur.io/journey-planner/v3/graphql
-                
-                To make it easier for our users to construct valid API-queries, we have an IDE for the API where you also find the documentation.
-                
-                GraphQL IDE: https://api.entur.io/graphql-explorer/journey-planner-v3
-                
-                Are you new to GraphQL? You can read more about it here: https://graphql.org/"""
+        "en": "This API is the core service for journey planning and uses OpenTripPlanner software to provide departure boards for individual stops, and point-to-point journey planning for all public transport in Norway, including real-time information, regardless of transport mode, or operator. All data is presented as a Transmodel-based GraphQL-API. Base URL: https://api.entur.io/journey-planner/v3/graphql . To make it easier for our users to construct valid API-queries, we have an IDE for the API where you also find the documentation. GraphQL IDE: https://api.entur.io/graphql-explorer/journey-planner-v3 . Are you new to GraphQL? You can read more about it here: https://graphql.org/"
     }
     data_service.endpointDescription = "https://developer.entur.org/pages-journeyplanner-journeyplanner"
     data_service.landing_page = ["https://developer.entur.org/pages-journeyplanner-journeyplanner"]
