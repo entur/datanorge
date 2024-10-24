@@ -1,0 +1,15 @@
+stop_id,stop_name,stop_lat,stop_lon,stop_desc,location_type,parent_station,wheelchair_boarding,vehicle_type,platform_code
+NSR:Quay:1,Oslo S Trelastgata,59.909548,10.755250,,,NSR:StopPlace:2,1,700,
+NSR:Quay:10,Otta stasjon,61.772302,9.537064,,,NSR:StopPlace:4,,100,1
+NSR:Quay:100,Eidsberg stasjon,59.513464,11.303643,,,NSR:StopPlace:63,,100,1
+NSR:Quay:1000,Kristiansand stasjon,58.145770,7.987168,,,NSR:StopPlace:609,1,100,4
+NSR:Quay:10000,Løkenåsveien,59.917833,10.965836,,,NSR:StopPlace:5466,,700,
+NSR:Quay:100000,Båtskardet,61.289938,8.813109,,,NSR:StopPlace:6436,,700,
+NSR:Quay:100001,Edane station,59.626696,12.829885,,,NSR:StopPlace:128,,100,1
+NSR:Quay:100002,Högboda station,59.557328,13.052377,,,NSR:StopPlace:107,,100,1
+NSR:Quay:100003,Kumla station,59.127059,15.140665,,,NSR:StopPlace:567,,100,1
+NSR:Quay:100004,Kumla station,59.127054,15.140753,,,NSR:StopPlace:567,,100,2
+NSR:Quay:100005,Örebro Centralstation,59.278877,15.211521,,,NSR:StopPlace:570,2,100,1
+NSR:Quay:100006,Örebro Centralstation,59.278903,15.211266,,,NSR:StopPlace:570,2,100,2
+NSR:Quay:100007,Örebro Centralstation,59.278917,15.211110,,,NSR:StopPlace:570,2,100,3
+NSR:Quay:100008,Välsviken station,59.391171,13.582422,,,NSR:StopPlace:452,,100,1
