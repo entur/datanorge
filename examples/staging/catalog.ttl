@@ -2,7 +2,7 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix ns1: <http://www.w3.org/2006/vcard/ns#> .
 
-<https://entur.no/> a dcat:Catalog ;
+<https://entur.org/> a dcat:Catalog ;
     dct:title "Entur Data Catalog"@en ;
     dcat:dataset <https://developer.entur.org/stops-and-timetable-data>,
         <https://stoppested.entur.org/> ;
