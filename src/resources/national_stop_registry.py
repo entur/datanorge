@@ -56,6 +56,7 @@ def create_dataset():
     dataset.publisher = ENTUR_DATANORGE_PAGE
 
     distribution_gtfs = Distribution()
+    distribution_gtfs.title = {"en": "All current stops"}
     distribution_gtfs.description = {"en": "Latest valid version of all current stops in Norway"}
     distribution_gtfs.identifier = "https://stoppested.entur.org/gtfs_latest/"
     distribution_gtfs.access_URL = "https://developer.entur.org/stops-and-timetable-data"
@@ -66,6 +67,7 @@ def create_dataset():
     # dataset.was_generated_by
     dataset.distributions = [distribution_gtfs]
     # dataset.spatial
+    dataset.spatial
     # dataset.keyword
     dataset.contactpoint = get_contact()
     # dataset.temporal
