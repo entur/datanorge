@@ -1,6 +1,6 @@
 from datacatalogtordf import DataService, Dataset, Distribution
 
-from src.constants import AccessRight, ENTUR_DATANORGE_PAGE, Theme, MediaType
+from src.constants import AccessRight, ENTUR_DATANORGE_PAGE, Theme, MediaType, Location
 from src.contact import get_contact
 
 
@@ -48,7 +48,7 @@ def create_dataset():
         "en": "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place."
     }
     dataset.identifier = "https://stoppested.entur.org/" 
-    dataset.theme = [Theme.TRANSPORT.value]
+    dataset.theme = [Theme.TRANSPORT.value, Theme.TRANSPORT_MOBILITETSTILBUD.value]
     dataset.title = {
         "nb": "Norsk stoppestedregister",
         "en": "National Stop Registry"
@@ -66,8 +66,7 @@ def create_dataset():
     # dataset.concept
     # dataset.was_generated_by
     dataset.distributions = [distribution_gtfs]
-    # dataset.spatial
-    dataset.spatial
+    dataset.spatial = [Location.NORWAY.value]
     # dataset.keyword
     dataset.contactpoint = get_contact()
     # dataset.temporal

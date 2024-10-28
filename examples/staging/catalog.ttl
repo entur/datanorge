@@ -51,8 +51,9 @@
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
 
 <https://stoppested.entur.org/gtfs_latest/> a dcat:Distribution ;
-    dcat:accessURL <https://developer.entur.org/stops-and-timetable-data> ;
     dct:description "Latest valid version of all current stops in Norway"@en ;
+    dct:title "All current stops"@en ;
+    dcat:accessURL <https://developer.entur.org/stops-and-timetable-data> ;
     dcat:downloadURL <https://storage.googleapis.com/marduk-production/tiamat/Current_latest-gtfs.zip> .
 
 <https://developer.entur.org/pages-geocoder-intro> a dcat:DataService ;
@@ -90,13 +91,15 @@
     dct:description "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place."@en,
         "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place."@nb ;
     dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
+    dct:spatial <https://data.geonorge.no/administrativeEnheter/nasjon/id/173163> ;
     dct:title "National Stop Registry"@en,
         "Norsk stoppestedregister"@nb ;
     dcat:contactPoint [ a ns1:Organization ;
             ns1:hasEmail <mailto:kollektivdata@entur.org> ;
             ns1:hasOrganizationName "Entur"@en ] ;
     dcat:distribution <https://stoppested.entur.org/gtfs_latest/> ;
-    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN>,
+        <https://psi.norge.no/los/tema/mobilitetstilbud> ;
     adms:sample <https://stoppested.entur.org/example/>.
 
 <https://developer.entur.org/pages-journeyplanner-journeyplanner> a dcat:DataService ;
