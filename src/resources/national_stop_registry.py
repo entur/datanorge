@@ -20,13 +20,13 @@ def create_data_service(datasets: [Dataset] = []):
     data_service.keyword = {"nb": "sanntid,rutetider,reiseplanlegging"}
     data_service.media_types = [MediaType.JSON.value]
     data_service.contactpoint = get_contact()
-    data_service.theme = [Theme.TRANSPORT.value]
+    data_service.theme = [Theme.TRANSPORT.value, Theme.TRANSPORT_MOBILITETSTILBUD.value]
     data_service.servesdatasets = datasets
     data_service.publisher = ENTUR_DATANORGE_PAGE
-    # national_stop_registry_dataset.was_generated_by
-    # national_stop_registry_dataset.distributions
-    # national_stop_registry_dataset.spatial
-    # national_stop_registry_dataset.temporal
+    # data_service.was_generated_by
+    # data_service.distributions
+    data_service.spatial = [Location.NORWAY.value]
+    # data_service.temporal
     data_service.access_rights = AccessRight.PUBLIC.value
 
     # Optional - https://data.norge.no/specification/dcat-ap-no#Datasett-valgfrie-egenskaper
@@ -37,6 +37,7 @@ def create_data_service(datasets: [Dataset] = []):
     data_service.landing_page = ["https://developer.entur.org/pages-nsr-nsr"]
     # national_stop_registry_dataset.modification_date
     # national_stop_registry_dataset.is_referenced_by
+    data_service.conforms_to = [CONFORMS_TO.TRANSMODEL.value, CONFORMS_TO.NETEX_NORWEGIAN_PROFILE.value]
 
     return data_service
 
@@ -77,6 +78,7 @@ def create_dataset():
     dataset.access_rights = AccessRight.PUBLIC.value
 
     # Optional - https://data.norge.no/specification/dcat-ap-no#Datasett-valgfrie-egenskaper
+    dataset.conforms_to = [CONFORMS_TO.GTFS.value,CONFORMS_TO.TRANSMODEL.value, CONFORMS_TO.NETEX_NORWEGIAN_PROFILE.value]
     # dataset.modification_date
     # dataset.is_referenced_by
     return dataset

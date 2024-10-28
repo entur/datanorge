@@ -19,6 +19,8 @@
 
 <https://developer.entur.org/stop-place> a dcat:DataService ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dct:conformsTo <https://enturas.atlassian.net/wiki/spaces/PUBLIC/overview>,
+        <https://transmodel-cen.eu> ;
     dct:description "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place."@en ;
     dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
     dct:title "National Stop Registry"@en,
@@ -32,7 +34,8 @@
     dcat:landingPage <https://developer.entur.org/pages-nsr-nsr> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> ;
     dcat:servesDataset <https://stoppested.entur.org/> ;
-    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN>,
+        <https://psi.norge.no/los/tema/mobilitetstilbud> .
 
 <https://developer.entur.org/timetable> a dcat:DataService ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
@@ -93,6 +96,9 @@
 
 <https://stoppested.entur.org/> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dct:conformsTo <https://enturas.atlassian.net/wiki/spaces/PUBLIC/overview>,
+        <https://gtfs.org/documentation/schedule/reference/>,
+        <https://transmodel-cen.eu> ;
     dct:description "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place."@en,
         "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place."@nb ;
     dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/210841962> ;

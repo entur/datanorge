@@ -14,7 +14,7 @@ class Format(Enum):
     JSON = URIRef("http://publications.europa.eu/resource/authority/file-type/JSON")
 
 class MediaType(Enum):
-    JSON = URIRef("https://www.iana.org/assignments/media-types/application/json"),
+    JSON = URIRef("https://www.iana.org/assignments/media-types/application/json")
     ZIP = URIRef("https://www.iana.org/assignments/media-types/application/zip")
 
 class Theme(Enum):
@@ -29,3 +29,5 @@ class Location(Enum):
 
 class CONFORMS_TO(Enum):
     GTFS = URIRef("https://gtfs.org/documentation/schedule/reference/")
+    TRANSMODEL = URIRef("https://transmodel-cen.eu")
+    NETEX_NORWEGIAN_PROFILE = URIRef("https://enturas.atlassian.net/wiki/spaces/PUBLIC/overview")
