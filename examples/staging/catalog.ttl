@@ -89,9 +89,6 @@
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
 
 <https://stoppested.entur.org/example/> a dcat:Distribution ;
-    dct:description "Exampledata"@en ;
-    dct:title "GTFS Exampledata"@en ;
-    dcat:accessURL <https://raw.githubusercontent.com/entur/datanorge/refs/heads/main/examples/staging/stop_registry_example.txt> ;
     dcat:downloadURL <https://raw.githubusercontent.com/entur/datanorge/refs/heads/main/examples/staging/stop_registry_example.txt> .
 
 <https://stoppested.entur.org/> a dcat:Dataset ;
