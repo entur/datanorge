@@ -56,6 +56,7 @@ def create_dataset():
     dataset.publisher = ENTUR_DATANORGE_PAGE
 
     distribution_gtfs = Distribution()
+    distribution_gtfs.description = {"en": "Latest valid version of all current stops in Norway"}
     distribution_gtfs.identifier = "https://stoppested.entur.org/gtfs_latest/"
     distribution_gtfs.access_URL = "https://developer.entur.org/stops-and-timetable-data"
     distribution_gtfs.download_URL = "https://storage.googleapis.com/marduk-production/tiamat/Current_latest-gtfs.zip"

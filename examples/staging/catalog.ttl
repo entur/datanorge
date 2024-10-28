@@ -52,6 +52,7 @@
 
 <https://stoppested.entur.org/gtfs_latest/> a dcat:Distribution ;
     dcat:accessURL <https://developer.entur.org/stops-and-timetable-data> ;
+    dct:description "Latest valid version of all current stops in Norway"@en ;
     dcat:downloadURL <https://storage.googleapis.com/marduk-production/tiamat/Current_latest-gtfs.zip> .
 
 <https://developer.entur.org/pages-geocoder-intro> a dcat:DataService ;
