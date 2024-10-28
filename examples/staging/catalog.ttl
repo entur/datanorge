@@ -51,10 +51,12 @@
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
 
 <https://stoppested.entur.org/gtfs_latest/> a dcat:Distribution ;
+    dct:conformsTo <https://gtfs.org/documentation/schedule/reference/> ;
     dct:description "Latest valid version of all current stops in Norway"@en ;
     dct:title "All current stops"@en ;
     dcat:accessURL <https://developer.entur.org/stops-and-timetable-data> ;
-    dcat:downloadURL <https://storage.googleapis.com/marduk-production/tiamat/Current_latest-gtfs.zip> .
+    dcat:downloadURL <https://storage.googleapis.com/marduk-production/tiamat/Current_latest-gtfs.zip> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/zip> .
 
 <https://developer.entur.org/pages-geocoder-intro> a dcat:DataService ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;

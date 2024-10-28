@@ -1,6 +1,7 @@
 from datacatalogtordf import DataService, Dataset, Distribution
+from rdflib import URIRef
 
-from src.constants import AccessRight, ENTUR_DATANORGE_PAGE, Theme, MediaType, Location
+from src.constants import AccessRight, ENTUR_DATANORGE_PAGE, Theme, MediaType, Location, CONFORMS_TO
 from src.contact import get_contact
 
 
@@ -53,10 +54,13 @@ def create_dataset():
         "nb": "Norsk stoppestedregister",
         "en": "National Stop Registry"
     }
+
     dataset.publisher = ENTUR_DATANORGE_PAGE
 
     distribution_gtfs = Distribution()
     distribution_gtfs.title = {"en": "All current stops"}
+    distribution_gtfs.media_types = [MediaType.ZIP.value]
+    distribution_gtfs.conforms_to = [CONFORMS_TO.GTFS.value]
     distribution_gtfs.description = {"en": "Latest valid version of all current stops in Norway"}
     distribution_gtfs.identifier = "https://stoppested.entur.org/gtfs_latest/"
     distribution_gtfs.access_URL = "https://developer.entur.org/stops-and-timetable-data"
@@ -69,7 +73,7 @@ def create_dataset():
     dataset.spatial = [Location.NORWAY.value]
     # dataset.keyword
     dataset.contactpoint = get_contact()
-    # dataset.temporal
+    #dataset.temporal
     dataset.access_rights = AccessRight.PUBLIC.value
 
     # Optional - https://data.norge.no/specification/dcat-ap-no#Datasett-valgfrie-egenskaper

@@ -14,7 +14,8 @@ class Format(Enum):
     JSON = URIRef("http://publications.europa.eu/resource/authority/file-type/JSON")
 
 class MediaType(Enum):
-    JSON = URIRef("https://www.iana.org/assignments/media-types/application/json")
+    JSON = URIRef("https://www.iana.org/assignments/media-types/application/json"),
+    ZIP = URIRef("https://www.iana.org/assignments/media-types/application/zip")
 
 class Theme(Enum):
     GOVE = URIRef("http://publications.europa.eu/resource/authority/data-theme/GOVE")
@@ -25,3 +26,6 @@ class Theme(Enum):
 
 class Location(Enum):
     NORWAY = URIRef("https://data.geonorge.no/administrativeEnheter/nasjon/id/173163")
+
+class CONFORMS_TO(Enum):
+    GTFS = URIRef("https://gtfs.org/documentation/schedule/reference/")
