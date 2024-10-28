@@ -86,6 +86,12 @@
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
 
+<https://stoppested.entur.org/example/> a dcat:Distribution ;
+    dct:description "Exampledata"@en ;
+    dct:title "GTFS Exampledata"@en ;
+    dcat:accessURL <https://raw.githubusercontent.com/entur/datanorge/refs/heads/main/examples/staging/stop_registry_example.txt> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/entur/datanorge/refs/heads/main/examples/staging/stop_registry_example.txt> .
+
 <https://stoppested.entur.org/> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
     dct:description "National Stop Register (NSR) is the master database for public transport stops in Norway and is primarily used to store and redistribute detailed information regarding the infrastructure of a stop place."@en,
