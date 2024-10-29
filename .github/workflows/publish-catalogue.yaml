@@ -2,6 +2,8 @@ name: Run Python Script and Save Output
 
 on:
   push:
+    branches:
+      - test-workflow
   workflow_dispatch:
 
 jobs:
@@ -27,12 +29,10 @@ jobs:
         id: run_script
         run: |
           output=$(python -c "import src.main; print(src.main.main())")
-          echo "Output: $output"
-
-      - name: Create output link
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
           echo "$output" > output.ttl
-          gh release delete latest-output-staging -y || true
-          gh release create latest-output-staging output.ttl --title "Entur catalogue staging" --prerelease
+
+      - name: Upload Text File as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: test
+          path: output.ttl
