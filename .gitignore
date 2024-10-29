@@ -2,3 +2,5 @@ venv/
 .env/
 env/
 my_venv/
+
+.idea/
