@@ -32,7 +32,9 @@ jobs:
           echo "$output" > output.ttl
 
       - name: Upload Text File as Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: test
           path: output.ttl
+          overwrite: true
+          compression-level: 0
