@@ -6,8 +6,7 @@ BASE_URL = "https://hcreg.atlas.vegvesen.no"
 
 def svv_contact():
     contact = Contact()
-    contact.identifier = "brukerstotte@vegvesen.no"
-    contact.name = {'no': 'Brukerstøtte Statens vegvesen'}
+    contact.identifier = "brukerstotte@vegvesen.no/sd-test/"
     contact.email = "brukerstotte@vegvesen.no"
     return contact
 
