@@ -2,17 +2,21 @@
 Repo for publisering og høsting til datanorg
 
 
-## Sette opp python
-Installer python 3.10
-```shell
-brew update
-brew install python@3.10
+## Sette opp pythonmiljø
+Sett opp virituelt miljø
+
+```sh
+brew update && brew install pyenv
+pyenv install 3.10
 ```
 
-Sett opp virituelt miljø
 ```sh
-python3.10 -m venv venv
-source venv/bin/activate
+pyenv local 3.10
+```
+
+```sh
+pyenv exec python3 -m venv .venv
+source .venv/bin/activate
 ```
 
 Installer avhengigheter
@@ -22,6 +26,6 @@ pip3 install -r requirements.txt
 
 Kjør main
 ```sh
-python3.10 -m src.main
+python3 -m src.main
 ```
 
