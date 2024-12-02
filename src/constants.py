@@ -16,6 +16,7 @@ class Format(Enum):
 class MediaType(Enum):
     JSON = URIRef("https://www.iana.org/assignments/media-types/application/json")
     ZIP = URIRef("https://www.iana.org/assignments/media-types/application/zip")
+    PLAIN_TEXT = URIRef("https://www.iana.org/assignments/media-types/text/plain")
 
 class Theme(Enum):
     GOVE = URIRef("http://publications.europa.eu/resource/authority/data-theme/GOVE")
