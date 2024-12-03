@@ -1,0 +1,22 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2006/vcard/ns#> .
+
+<Tenor@skatteetaten.no/catalog/sd-test/> a dcat:Catalog ;
+    dct:description "Testkatalog for Tenor av samferdselsdata"@no ;
+    dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
+    dct:title "Testkatalog for Tenor av samferdselsdata"@no ;
+    dcat:service <https://testdata.api.skatteetaten.no/api/testnorge/v2/soek/sd-test/> .
+
+<https://testdata.api.skatteetaten.no/api/testnorge/v2/soek/sd-test/> a dcat:DataService ;
+    dct:description "Tenor testdatasøk gir deg muligheten til å søke i syntetiske testdata fra Test-Norge, og via API-et kan virksomheter integrere mot fra sine automatiske verdikjedetester for søk i testdataene."@no ;
+    dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
+    dct:title "Testdata søk API"@no ;
+    dcat:contactPoint [ a ns1:Organization ;
+            ns1:hasEmail <mailto:Tenor@skatteetaten.no> ] ;
+    dcat:endpointDescription <https://skatteetaten.github.io/testnorge-tenor-dokumentasjon/api/openapi-soek-api/> ;
+    dcat:endpointURL <https://testdata.api.skatteetaten.no/api/testnorge/v2/soek/> ;
+    dcat:keyword "tenor, testdatasøk"@nb ;
+    dcat:landingPage <https://skatteetaten.github.io/testnorge-tenor-dokumentasjon> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json>,
+        <https://www.iana.org/assignments/media-types/text/plain> .
