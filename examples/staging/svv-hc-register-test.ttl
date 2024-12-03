@@ -2,21 +2,33 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix ns1: <http://www.w3.org/2006/vcard/ns#> .
 
-<Tenor@skatteetaten.no/catalog/sd-test/> a dcat:Catalog ;
-    dct:description "Testkatalog for Tenor av samferdselsdata"@no ;
+<https://www.vegvesen.no/sd-test/> a dcat:Catalog ;
+    dct:description "Testkatalog for Statens vegvesen av samferdselsdata"@en ;
     dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
-    dct:title "Testkatalog for Tenor av samferdselsdata"@no ;
-    dcat:service <https://testdata.api.skatteetaten.no/api/testnorge/v2/soek/sd-test/> .
+    dct:title "Testkatalog for Statens vegvesen av samferdselsdata"@no ;
+    dcat:service <https://hcreg.atlas.vegvesen.no/hc-registeret_gyldigstatus_bedrift/kontroller/sd-test/>,
+        <https://hcreg.atlas.vegvesen.no/hc-registeret_internbruker/sd-test/> .
 
-<https://testdata.api.skatteetaten.no/api/testnorge/v2/soek/sd-test/> a dcat:DataService ;
-    dct:description "Tenor testdatasøk gir deg muligheten til å søke i syntetiske testdata fra Test-Norge, og via API-et kan virksomheter integrere mot fra sine automatiske verdikjedetester for søk i testdataene."@no ;
+<https://hcreg.atlas.vegvesen.no/hc-registeret_gyldigstatus_bedrift/kontroller/sd-test/> a dcat:DataService ;
+    dct:description "Et API som brukes for å gjøre oppslag på gyldighet til parkeringstillatelser. Det er kun parkeringstilbydere som kan søke om tilgang."@no ;
     dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
-    dct:title "Testdata søk API"@no ;
+    dct:title "Register for parkeringstillatelser - endepunkt for kontroll"@no ;
     dcat:contactPoint [ a ns1:Organization ;
-            ns1:hasEmail <mailto:Tenor@skatteetaten.no> ] ;
-    dcat:endpointDescription <https://skatteetaten.github.io/testnorge-tenor-dokumentasjon/api/openapi-soek-api/> ;
-    dcat:endpointURL <https://testdata.api.skatteetaten.no/api/testnorge/v2/soek/> ;
-    dcat:keyword "tenor, testdatasøk"@nb ;
-    dcat:landingPage <https://skatteetaten.github.io/testnorge-tenor-dokumentasjon> ;
-    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json>,
-        <https://www.iana.org/assignments/media-types/text/plain> .
+            ns1:hasEmail <mailto:brukerstotte@vegvesen.no> ] ;
+    dcat:endpointDescription <https://hcreg.atlas.vegvesen.no/v3/api-docs> ;
+    dcat:endpointURL <https://hcreg.atlas.vegvesen.no/hc-registeret_gyldigstatus_bedrift/kontroller/> ;
+    dcat:landingPage <https://www.vegvesen.no/om-oss/om-organisasjonen/apne-data/et-utvalg-apne-data/hc-reg/> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
+
+<https://hcreg.atlas.vegvesen.no/hc-registeret_internbruker/sd-test/> a dcat:DataService ;
+    dct:description "Et API som benyttes av leverandører av parkeringssystemer <b>på vegne av en kommunene</b> til å melde inn nye parkeringstillatelser for forflytningshemmede eller endringer i disse."@no ;
+    dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
+    dct:title "Register for parkeringstillatelser - endepunkt for kommuner"@no ;
+    dcat:contactPoint [ a ns1:Organization ;
+            ns1:hasEmail <mailto:brukerstotte@vegvesen.no> ] ;
+    dcat:endpointDescription <https://hcreg.atlas.vegvesen.no/v3/api-docs> ;
+    dcat:endpointURL <https://hcreg.atlas.vegvesen.no/hc-registeret_internbruker/> ;
+    dcat:landingPage <https://www.vegvesen.no/om-oss/om-organisasjonen/apne-data/et-utvalg-apne-data/hc-reg/> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
