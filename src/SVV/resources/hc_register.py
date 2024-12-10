@@ -7,7 +7,7 @@ BASE_URL = "https://hcreg.atlas.vegvesen.no"
 def svv_contact():
     contact = Contact()
     contact.identifier = "brukerstotte@vegvesen.no/sd-test/"
-    contact.email = "brukerstotte@vegvesen.no"
+    contact.email = "team-sd-soknad-test@entur.org"
     return contact
 
 def create_hc_register_kontroll():

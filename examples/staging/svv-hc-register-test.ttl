@@ -14,7 +14,7 @@
     dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
     dct:title "Register for parkeringstillatelser - endepunkt for kontroll"@no ;
     dcat:contactPoint [ a ns1:Organization ;
-            ns1:hasEmail <mailto:brukerstotte@vegvesen.no> ] ;
+            ns1:hasEmail <mailto:team-sd-soknad-test@entur.org> ] ;
     dcat:endpointDescription <https://hcreg.atlas.vegvesen.no/v3/api-docs> ;
     dcat:endpointURL <https://hcreg.atlas.vegvesen.no/hc-registeret_gyldigstatus_bedrift/kontroller/> ;
     dcat:landingPage <https://www.vegvesen.no/om-oss/om-organisasjonen/apne-data/et-utvalg-apne-data/hc-reg/> ;
@@ -26,7 +26,7 @@
     dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
     dct:title "Register for parkeringstillatelser - endepunkt for kommuner"@no ;
     dcat:contactPoint [ a ns1:Organization ;
-            ns1:hasEmail <mailto:brukerstotte@vegvesen.no> ] ;
+            ns1:hasEmail <mailto:team-sd-soknad-test@entur.org> ] ;
     dcat:endpointDescription <https://hcreg.atlas.vegvesen.no/v3/api-docs> ;
     dcat:endpointURL <https://hcreg.atlas.vegvesen.no/hc-registeret_internbruker/> ;
     dcat:landingPage <https://www.vegvesen.no/om-oss/om-organisasjonen/apne-data/et-utvalg-apne-data/hc-reg/> ;
