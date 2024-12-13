@@ -8,7 +8,7 @@ def create_test_dataset():
     dataset = Dataset()
     dataset.identifier = "https://test-data/identifikator-for-datasettet"
     dataset.title = {
-        "no": "Fakedoor test"
+        "no": "Test av fakedoor"
     }
     dataset.publisher = "https://staging.fellesdatakatalog.digdir.no/organizations/210841962"
     dataset.description = {
