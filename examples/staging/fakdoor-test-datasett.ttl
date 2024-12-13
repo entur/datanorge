@@ -10,6 +10,6 @@
 <https://test-data/identifikator-for-datasettet> a dcat:Dataset ;
     dct:description "Beskrivelse av data."@no ;
     dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
-    dct:title "Fakedoor test"@no ;
+    dct:title "Test av fakedoor"@no ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN>,
         <https://psi.norge.no/los/tema/mobilitetstilbud> .
