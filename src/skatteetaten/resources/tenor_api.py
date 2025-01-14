@@ -6,7 +6,7 @@ from src.constants import Theme, MediaType, AccessRight
 def tenor_contact():
     contact = Contact()
     contact.identifier = "Tenor@skatteetaten.no/sd-test/"
-    contact.email = "Tenor@skatteetaten.no"
+    contact.email = "team-sd-soknad-test@entur.org"
     return contact
 
 def create_tenor_api():

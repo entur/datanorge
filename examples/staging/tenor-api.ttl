@@ -13,7 +13,7 @@
     dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
     dct:title "Testdata søk API"@no ;
     dcat:contactPoint [ a ns1:Organization ;
-            ns1:hasEmail <mailto:Tenor@skatteetaten.no> ] ;
+            ns1:hasEmail <mailto:team-sd-soknad-test@entur.org> ] ;
     dcat:endpointDescription <https://skatteetaten.github.io/testnorge-tenor-dokumentasjon/api/openapi-soek-api/> ;
     dcat:endpointURL <https://testdata.api.skatteetaten.no/api/testnorge/v2/soek/> ;
     dcat:keyword "tenor, testdatasøk"@nb ;
