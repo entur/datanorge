@@ -24,6 +24,7 @@ For å løse dette kan Sikt sin søknadsløsning brukes som en enkel måte å sa
 
 Dersom det er mange nok som ønsker tilgang til en dataressurs, kan dette brukes som grunnlag for å prioritere de juridiske og tekniske prosessene som trengs for å gjøre dataene tilgjengelige. Samtidig gir dette en måte å samle innsikt i hvilke data som faktisk er etterspurt, uten at de trenger å være klare for deling på forhånd. Det er altså en datadreven tilnærming til datadeling 🤓
 
-Trykk på "Meld interesse" for å vise at du ønsker tilgang til en aggregert statistikk over interessemeldinger. Din interesse kan bidra til å prioritere utarbeidelsen av denne statistikken og gi innsikt i hvilke dataressurser som er mest etterspurt. Sammen kan vi skape en mer behovsdrevet og effektiv tilnærming til datadeling!"""
+Trykk på "Meld interesse" for å vise at du ønsker tilgang til en aggregert statistikk over interessemeldinger. Din interesse kan bidra til å prioritere utarbeidelsen av denne statistikken og gi innsikt i hvilke dataressurser som er mest etterspurt. Sammen kan vi skape en mer behovsdrevet og effektiv tilnærming til datadeling!
+"""
     }
     return dataset
