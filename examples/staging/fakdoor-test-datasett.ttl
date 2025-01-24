@@ -22,5 +22,4 @@ Trykk på "Meld interesse" for å vise at du ønsker tilgang til en aggregert st
 """@no ;
     dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/210841962> ;
     dct:title "Statistikk over Interessemeldinger for tilgang til dataressurser"@no ;
-    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN>,
-        <https://psi.norge.no/los/tema/mobilitetstilbud> .
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TECH>.

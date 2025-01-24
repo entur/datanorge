@@ -21,6 +21,7 @@ class MediaType(Enum):
 class Theme(Enum):
     GOVE = URIRef("http://publications.europa.eu/resource/authority/data-theme/GOVE")
     TRANSPORT = URIRef("http://publications.europa.eu/resource/authority/data-theme/TRAN")
+    TECH = URIRef("http://publications.europa.eu/resource/authority/data-theme/TECH")
     TRANSPORT_RUTEINFORMASJON = URIRef("https://psi.norge.no/los/ord/ruteinformasjon")
     TRANSPORT_MOBILITETSTILBUD = URIRef("https://psi.norge.no/los/tema/mobilitetstilbud")
     TRANSPORT_TRAFIKKINFORMASJON = URIRef("https://psi.norge.no/los/tema/trafikkinformasjon")

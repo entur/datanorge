@@ -25,6 +25,6 @@ Dersom det er mange nok som ønsker tilgang til en dataressurs, kan dette brukes
 Trykk på "Meld interesse" for å vise at du ønsker tilgang til en aggregert statistikk over interessemeldinger. Din interesse kan bidra til å prioritere utarbeidelsen av denne statistikken og gi innsikt i hvilke dataressurser som er mest etterspurt. Sammen kan vi skape en mer behovsdrevet og effektiv tilnærming til datadeling!
 """
     }
-    dataset.theme = [Theme.TRANSPORT.value, Theme.TRANSPORT_MOBILITETSTILBUD.value]
+    dataset.theme = [Theme.TECH.value]
 
     return dataset
