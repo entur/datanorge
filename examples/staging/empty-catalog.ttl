@@ -9,4 +9,5 @@
 <https://entur.no/c043e0dc-d3e5-4128-aa3f-b098fd955346> a dcat:Catalog .
 <https://entur.no/07e0da8a-19ec-43a3-8622-e97f55492470> a dcat:Catalog .
 <https://registrering.staging.fellesdatakatalog.digdir.no/catalogs/210841962> a dcat:Catalog .
+<https://sikt.no/test-datasamarbeidet> a dcat:Catalog .
 
