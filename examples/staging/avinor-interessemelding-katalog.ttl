@@ -31,7 +31,7 @@
   dct:title "Kundeservice saker og kostnadsdata" ;
   dct:description """Kombinasjon av kundeservicesaker, flybevegelser, kostnader per passasjer, terminal, gate, stand, de-ice, osv. Ved å kombinere disse dataene kan man få en helhetlig forståelse av lufthavnens operasjonelle effektivitet, kundeservice og kostnader. Dette gir mulighet for å identifisere forbedringsområder og optimalisere driften.""" ;
   dct:identifier "https://avinor.no/dataset/airport/kundeservice-kostnader" ;
-  dcat:theme <https://publications.europa.eu/resource/authority/data-theme/CONS>, <https://psi.norge.no/los/tema/forbrukerspørsmål> .
+  dcat:theme <https://publications.europa.eu/resource/authority/data-theme/CONS>, <https://psi.norge.no/los/tema/handel-og-service>, <https://psi.norge.no/los/tema/luftfart> .
 
 <https://avinor.no/dataset/airport/bagasjedata>
   a dcat:Dataset ;
