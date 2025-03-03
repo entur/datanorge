@@ -15,7 +15,7 @@
   dct:title "Lufthavns operasjonelle status" ;
   dct:description """Data og informasjon relevant for lufthavnenes operasjonelle status. Dette inkluderer detaljer om operasjonelle begrensninger på flyplassen som er viktige for eksterne aktører og interessenter å være oppmerksomme på, for eksempel midlertidige nedleggelser av rullebaner, vedlikeholdsarbeid eller andre forhold som kan påvirke flyoperasjoner.""" ;
   dct:identifier "https://avinor.no/dataset/airport/operasjonell-status" ;
-  dcat:theme <https://publications.europa.eu/resource/authority/data-theme/TRAN> .
+  dcat:theme <https://publications.europa.eu/resource/authority/data-theme/TRAN>, <https://psi.norge.no/los/tema/luftfart> .
 
 <https://avinor.no/dataset/airport/operasjonelle-metrikker>
   a dcat:Dataset ;
@@ -23,7 +23,7 @@
   dct:title "Lufthavns operasjonelle metrikker" ;
   dct:description """Metrikker som Avinor samler på operasjonell status på lufthavner inneholder data om forventet taxitid, forventede ankomster og punktlighet on-time-performance (OTP) på både ankomster og avganger. Disse metrikker gir innsikt i hvor effektivt flyoperasjoner blir håndtert på lufthavnene.""" ;
   dct:identifier "https://avinor.no/dataset/airport/operasjonelle-metrikker" ;
-  dcat:theme <https://publications.europa.eu/resource/authority/data-theme/TRAN> .
+      dcat:theme <https://publications.europa.eu/resource/authority/data-theme/TRAN>, <https://psi.norge.no/los/tema/luftfart> .
 
 <https://avinor.no/dataset/airport/kundeservice-kostnader>
   a dcat:Dataset ;
@@ -31,7 +31,7 @@
   dct:title "Kundeservice saker og kostnadsdata" ;
   dct:description """Kombinasjon av kundeservicesaker, flybevegelser, kostnader per passasjer, terminal, gate, stand, de-ice, osv. Ved å kombinere disse dataene kan man få en helhetlig forståelse av lufthavnens operasjonelle effektivitet, kundeservice og kostnader. Dette gir mulighet for å identifisere forbedringsområder og optimalisere driften.""" ;
   dct:identifier "https://avinor.no/dataset/airport/kundeservice-kostnader" ;
-  dcat:theme <https://publications.europa.eu/resource/authority/data-theme/CONS> .
+  dcat:theme <https://publications.europa.eu/resource/authority/data-theme/CONS>, <https://psi.norge.no/los/tema/forbrukerspørsmål> .
 
 <https://avinor.no/dataset/airport/bagasjedata>
   a dcat:Dataset ;
@@ -39,7 +39,7 @@
   dct:title "Strukturert bagasjedata" ;
   dct:description """Kombinert data fra bagasjesystemer på tvers av lufthavnene: Historisk bagasjedata som inneholder informasjon om bagasjeinnlevering (bagdrop), reisesegmenter (leg) og flyplass (airport). Dette gir innsikt i bagasjehåndteringsprosessen og kan brukes til å forbedre effektiviteten og nøyaktigheten i bagasjehåndteringen.""" ;
   dct:identifier "https://avinor.no/dataset/airport/bagasjedata" ;
-  dcat:theme <https://publications.europa.eu/resource/authority/data-theme/TRAN> .
+  dcat:theme <https://publications.europa.eu/resource/authority/data-theme/TRAN>, <https://psi.norge.no/los/tema/luftfart> .
 
 <https://avinor.no/dataset/airport/masterdata-punktlighet>
   a dcat:Dataset ;
@@ -47,7 +47,7 @@
   dct:title "Masterdata for punktlighet og Masterdata for regularitet" ;
   dct:description """Masterdata for måling av punktlighet og regularitet. Punktlighet refererer til andelen av planlagte flygninger som faktisk blir gjennomført, mens regularitet handler om andelen av flyavgangene som går i rute eller er mindre enn 15 minutter forsinket. Disse måledataene er viktige for å overvåke og forbedre lufthavnens operasjonelle ytelse.""" ;
   dct:identifier "https://avinor.no/dataset/airport/masterdata-punktlighet" ;
-  dcat:theme <https://publications.europa.eu/resource/authority/data-theme/TRAN> .
+  dcat:theme <https://publications.europa.eu/resource/authority/data-theme/TRAN>, <https://psi.norge.no/los/tema/luftfart> .
 
 <https://avinor.no/dataset/airport/turnaround-status>
   a dcat:Dataset ;
@@ -55,7 +55,7 @@
   dct:title "Status på turnaround-prosessen" ;
   dct:description """Data om status på turnaround-prosessene per fly. Dette inkluderer informasjon om tiden fra et luftfartøy ankommer til flyoppstillingsplass til det forlater flyoppstillingsplass. Ved å analysere disse dataene kan man optimalisere turnaround-tiden og forbedre effektiviteten i flyplassoperasjonene.""" ;
   dct:identifier "https://avinor.no/dataset/airport/turnaround-status" ;
-  dcat:theme <https://publications.europa.eu/resource/authority/data-theme/TRAN> .
+  dcat:theme <https://publications.europa.eu/resource/authority/data-theme/TRAN>, <https://psi.norge.no/los/tema/luftfart> .
 
 <https://avinor.no/dataset/airport/forsinkelser>
   a dcat:Dataset ;
@@ -63,4 +63,4 @@
   dct:title "Forsinkelser" ;
   dct:description """Data om forsinkelser på ankomster og avganger for fly. Disse dataene gir innsikt i årsakene til forsinkelser og hjelper med å identifisere mønstre og trender. Dette kan brukes til å vurdere tiltak for å redusere forsinkelser og forbedre punktligheten for både ankomster og avganger.""" ;
   dct:identifier "https://avinor.no/dataset/airport/forsinkelser" ;
-  dcat:theme <https://publications.europa.eu/resource/authority/data-theme/TRAN> .
+  dcat:theme <https://publications.europa.eu/resource/authority/data-theme/TRAN>, <https://psi.norge.no/los/tema/luftfart> .
